@@ -13,7 +13,7 @@ const Footer = () => {
         {/* Logo + About */}
         <div className="flex flex-col md:flex-row items-center md:items-center md:justify-evenly gap-6 mb-20">
           <img
-            src="/Group 8.png"
+            src="/logo.png"
             alt="Cooking Stuff Logo"
             className="w-32  md:w-40 lg:w-52 mx-auto md:mx-0 lg:mr-20"
           />

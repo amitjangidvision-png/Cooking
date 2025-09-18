@@ -11,7 +11,7 @@ const Navbar = () => {
         
         <div>
           <img
-            src="/Group 8.png"
+            src="/logo.png"
             alt="Cooking Stuff logo"
             className="w-32 h-12 object-contain"
           />
