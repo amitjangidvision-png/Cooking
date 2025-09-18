@@ -157,8 +157,8 @@ const CourseDetails = () => {
             </div>
 
             {/* Share Course */}
-            <div>
-              <h1 className="font-heading text-2xl sm:text-4xl mb-4">
+            <div className="lg:mx-0 mx-auto">
+              <h1 className="font-heading text-2xl sm:text-4xl mb-4 ">
                 Share Course:
               </h1>
               <div className="flex flex-wrap gap-4 sm:space-x-6">
