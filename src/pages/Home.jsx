@@ -1,7 +1,6 @@
 import React from "react";
 import Card from "../components/Card";
 import BlogCard from "../components/BlogCard";
-import ReviewCard from "../components/ReviewCard";
 import ImageSlider from "../components/ImageSlider";
 import { ArrowRight } from "lucide-react";
 import ReviewSlider from "../components/ReviewSlider";
@@ -292,15 +291,25 @@ return (
       {/* Read Our Post */}
       <section className="py-16 bg-secondary">
         <div className="container mx-auto px-4 sm:px-10 text-center mb-10">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading mb-2.5 p-2.5">Read Our Post</h2>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading mb-2.5 p-2.5">
+            Read Our Post
+          </h2>
           <p className="font-body text-lg sm:text-xl md:text-2xl lg:text-3xl text-textPrimary p-2.5">
             We Specialise in organising Professional Training Courses
           </p>
         </div>
-        <div className="container px-4 sm:px-10 mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
-          {blogs.map((blog, idx) => (
-            <BlogCard key={idx} {...blog} />
-          ))}
+
+        <div className="container px-4 sm:px-10 mx-auto">
+          <div className="flex flex-wrap gap-6 justify-center">
+            {blogs.map((blog, idx) => (
+              <div
+                key={idx}
+                className="w-full sm:w-[48%] lg:w-[31%] flex justify-center"
+              >
+                <BlogCard {...blog} />
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
